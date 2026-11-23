@@ -404,6 +404,13 @@ hl.layer_rule({
 })
 
 hl.layer_rule({
+    name  = "audio-popup-blur",
+    match = { namespace = "^audio-popup$" },
+    blur  = true,
+    ignore_alpha = 0.5,
+})
+
+hl.layer_rule({
     name  = "control-center-blur",
     match = { namespace = "^control-center$" },
     blur  = true,

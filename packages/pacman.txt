@@ -18,6 +18,7 @@ fzf
 ghostty
 gimp
 git
+github-cli
 grim
 gst-plugin-pipewire
 htop

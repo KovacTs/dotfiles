@@ -82,9 +82,10 @@
             "default": ["󰕿", "󰖀", "󰕾"]
         },
         "tooltip": true,
-        "tooltip-format": "Volumen: {volume}%\n{desc}",
+        "tooltip-format": "Volumen: {volume}%\n{desc}\nClick izq: Silenciar · Click der: Dispositivos",
         "scroll-step": 5,
-        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-right": "bash ~/.config/waybar/scripts/audio-menu.sh"
     },
 
     "network": {
