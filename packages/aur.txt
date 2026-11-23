@@ -1,0 +1,7 @@
+antigravity-cli
+onlyoffice-bin
+spotify
+vesktop-bin
+wlogout
+yay
+zen-browser-bin

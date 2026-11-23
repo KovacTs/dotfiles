@@ -1,0 +1,175 @@
+* {
+    font-family: "JetBrainsMono Nerd Font Propo", "Adwaita Sans", "Font Awesome 7 Free", "Font Awesome 7 Free Solid", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #cdd6f4;
+    border: none;
+}
+
+tooltip {
+    background-color: rgba(13, 17, 23, 0.96);
+    border: 1px solid rgba(137, 180, 250, 0.25);
+    border-radius: 10px;
+}
+
+tooltip label {
+    color: #cdd6f4;
+    padding: 4px 6px;
+}
+
+#custom-arch,
+#custom-mpris,
+#custom-weather,
+#clock,
+#workspaces,
+#pulseaudio,
+#network,
+#battery {
+    background-color: rgba(13, 17, 23, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 999px;
+    padding: 0 10px;
+    margin: 0;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#custom-arch {
+    font-family: "JetBrainsMono Nerd Font Propo";
+    color: #e6edf3;
+    font-size: 13px;
+    padding: 0 8px;
+}
+
+#custom-arch:hover {
+    background-color: rgba(30, 35, 48, 0.96);
+    color: #ffffff;
+}
+
+#custom-mpris {
+    font-family: "JetBrainsMono Nerd Font Mono", "JetBrainsMono Nerd Font Propo", monospace;
+    color: #74c7ec;
+}
+
+#custom-mpris.paused {
+    color: rgba(116, 199, 236, 0.65);
+}
+
+#custom-mpris:hover {
+    background-color: rgba(30, 35, 48, 0.96);
+}
+
+#custom-mpris.stopped {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#custom-weather {
+    color: #e67e80;
+}
+
+#custom-weather:hover {
+    background-color: rgba(30, 35, 48, 0.96);
+}
+
+#clock {
+    color: #89b4fa;
+    padding: 0 11px;
+}
+
+#clock:hover {
+    background-color: rgba(30, 35, 48, 0.96);
+}
+
+#workspaces {
+    padding: 2px 4px;
+}
+
+#workspaces button {
+    padding: 0 7px;
+    margin: 0 2px;
+    border-radius: 999px;
+    border: none;
+    background-color: rgba(49, 50, 68, 0.55);
+    color: #a6adc8;
+    font-size: 10.5px;
+    min-width: 16px;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.empty {
+    background-color: rgba(49, 50, 68, 0.32);
+    color: #6c7086;
+}
+
+#workspaces button:hover {
+    background-color: rgba(137, 180, 250, 0.25);
+    color: #cdd6f4;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#workspaces button.active {
+    background-color: #7aa2f7;
+    color: #0d1117;
+    font-size: 11px;
+    font-weight: 700;
+    min-width: 24px;
+    padding: 0 10px;
+}
+
+#workspaces button.urgent {
+    background-color: #f38ba8;
+    color: #0d1117;
+}
+
+#pulseaudio {
+    color: #e5c07b;
+}
+
+#pulseaudio:hover {
+    background-color: rgba(30, 35, 48, 0.96);
+}
+
+#pulseaudio.muted {
+    color: #f38ba8;
+}
+
+#network {
+    color: #cba6f7;
+}
+
+#network:hover {
+    background-color: rgba(30, 35, 48, 0.96);
+}
+
+#network.disconnected {
+    color: #f38ba8;
+}
+
+#battery {
+    color: #a6e3a1;
+}
+
+#battery:hover {
+    background-color: rgba(30, 35, 48, 0.96);
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #a6e3a1;
+}
+
+#battery.warning:not(.charging) {
+    color: #f9e2af;
+}
+
+#battery.critical:not(.charging) {
+    color: #f38ba8;
+}

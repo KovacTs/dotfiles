@@ -1,0 +1,112 @@
+{
+    "layer": "top",
+    "position": "top",
+    "exclusive": true,
+    "passthrough": false,
+    "height": 26,
+    "margin-top": 0,
+    "margin-left": 6,
+    "margin-right": 6,
+    "spacing": 6,
+
+    "modules-left": [
+        "custom/arch",
+        "custom/mpris",
+        "custom/weather"
+    ],
+    "modules-center": [
+        "clock",
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "battery"
+    ],
+
+    "custom/arch": {
+        "format": "",
+        "tooltip": true,
+        "tooltip-format": "Click izq: Aplicaciones\nClick der: Menú de apagado",
+        "on-click": "wofi --show drun",
+        "on-click-right": "pkill -x wlogout || wlogout -b 5 -T 260 -B 260 -L 285 -R 285 --protocol layer-shell"
+    },
+
+    "custom/mpris": {
+        "exec": "python3 ~/.config/waybar/scripts/mpris-scroll.py",
+        "return-type": "json",
+        "tooltip": true,
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl next",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
+    },
+
+    "custom/weather": {
+        "exec": "~/.config/waybar/scripts/weather.sh",
+        "return-type": "json",
+        "interval": 900,
+        "signal": 8,
+        "tooltip": true,
+        "on-click": "pkill -RTMIN+8 waybar"
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%a %d %b}",
+        "on-click-right": "bash ~/.config/waybar/scripts/control-center.sh",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "month",
+            "format": {
+                "months": "<span color='#cdd6f4'><b>{}</b></span>",
+                "days": "<span color='#bac2de'>{}</span>",
+                "weekdays": "<span color='#89b4fa'><b>{}</b></span>",
+                "today": "<span color='#f38ba8'><b>{}</b></span>"
+            }
+        }
+    },
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "sort-by-number": true
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟 Mute",
+        "format-icons": {
+            "headphone": "󰋋",
+            "headset": "󰋎",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "tooltip": true,
+        "tooltip-format": "Volumen: {volume}%\n{desc}",
+        "scroll-step": 5,
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    },
+
+    "network": {
+        "format-wifi": "{icon} {essid}",
+        "format-ethernet": "󰈀 {ifname}",
+        "format-disconnected": "󰤭 Sin red",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "max-length": 18,
+        "tooltip": false,
+        "on-click": "bash ~/.config/waybar/scripts/wifi-menu.sh",
+        "on-click-right": "ghostty -e nmtui"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "tooltip-format": "Batería: {capacity}% ({timeTo})"
+    }
+}

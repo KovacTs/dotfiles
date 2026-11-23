@@ -1,0 +1,11 @@
+[Unit]
+Description=Comprobar nivel de batería periódicamente
+PartOf=graphical-session.target
+
+[Timer]
+OnActiveSec=10s
+OnUnitActiveSec=30s
+AccuracySec=5s
+
+[Install]
+WantedBy=graphical-session.target

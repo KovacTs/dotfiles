@@ -1,0 +1,16 @@
+# Configuración personalizada de Wofi
+show=drun
+term=ghostty
+allow_images=true
+image_size=32
+gtk_dark=true
+
+width=600
+height=450
+location=center
+prompt=Buscar aplicaciones...
+
+insensitive=true
+hide_scroll=true
+line_wrap=word
+dynamic_lines=false

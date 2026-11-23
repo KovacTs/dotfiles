@@ -1,0 +1,81 @@
+/* Tema oscuro personalizado para Wofi con mayor espaciado entre aplicaciones */
+
+* {
+    font-family: "Adwaita Sans", sans-serif;
+    font-size: 14px;
+}
+
+#window {
+    margin: 0px;
+    border: 2px solid #313244;
+    border-radius: 14px;
+    background-color: #181825;
+}
+
+#outer-box {
+    margin: 12px;
+    padding: 8px;
+    border: none;
+    background-color: #181825;
+}
+
+#input {
+    margin: 4px 4px 14px 4px;
+    padding: 10px 14px;
+    border: 1px solid #313244;
+    border-radius: 10px;
+    color: #cdd6f4;
+    background-color: #1e1e2e;
+    box-shadow: none;
+}
+
+#input:focus {
+    border-color: #89b4fa;
+    box-shadow: none;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#inner-box {
+    margin: 0px 4px;
+    border: none;
+    background-color: transparent;
+}
+
+#entry {
+    margin: 6px 0px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    outline-style: none;
+}
+
+#entry:selected {
+    background-color: #313244;
+    outline-style: none;
+}
+
+#expander-box {
+    background-color: transparent;
+}
+
+#img {
+    margin-right: 14px;
+    background-color: transparent;
+}
+
+#text {
+    margin: 0px;
+    padding: 2px 0px;
+    color: #cdd6f4;
+    background-color: transparent;
+}
+
+#entry:selected #text {
+    color: #ffffff;
+    font-weight: 600;
+}

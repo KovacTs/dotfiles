@@ -1,0 +1,22 @@
+# Configuración personalizada de Ghostty
+command = /usr/bin/zsh
+shell-integration = zsh
+theme = 12-bit Rainbow
+
+# Fuente y tamaño
+font-family = Adwaita Mono
+font-size = 12
+
+# Espaciado interno de la ventana
+window-padding-x = 12
+window-padding-y = 10
+
+# Apariencia y cursor
+window-decoration = false
+cursor-style = bar
+cursor-style-blink = true
+# background-opacity = 0.92
+
+# Comportamiento
+copy-on-select = clipboard
+confirm-close-surface = false

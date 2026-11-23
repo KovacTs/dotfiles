@@ -1,0 +1,13 @@
+[Unit]
+Description=Restaurar estados persistentes del Centro de control
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/python3 /home/kovac/.local/bin/control-center-restore.py --restore
+ExecStop=/usr/bin/python3 /home/kovac/.local/bin/control-center-restore.py --save-brightness
+
+[Install]
+WantedBy=graphical-session.target

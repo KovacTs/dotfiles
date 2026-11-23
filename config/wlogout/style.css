@@ -1,0 +1,90 @@
+* {
+    font-family: "JetBrainsMono Nerd Font Propo", "Adwaita Sans", sans-serif;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+window {
+    background-color: rgba(13, 17, 23, 0.55);
+}
+
+button {
+    min-width: 104px;
+    min-height: 92px;
+    margin: 8px;
+    padding: 80px 8px 0 8px;
+    border-radius: 20px;
+    border: 1.5px solid rgba(255, 255, 255, 0.08);
+    background-color: rgba(13, 17, 23, 0.88);
+    color: #a6adc8;
+    font-size: 11.5px;
+    font-weight: 600;
+    background-repeat: no-repeat;
+    background-position: center 36%;
+    background-size: 36px;
+    outline-style: none;
+    transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+button:focus,
+button:hover,
+button:active {
+    outline-style: none;
+    background-size: 40px;
+}
+
+#lock {
+    background-image: image(url("/home/kovac/.config/wlogout/icons/lock.svg"));
+}
+#lock:hover,
+#lock:focus {
+    background-color: rgba(24, 34, 52, 0.94);
+    border-color: #89b4fa;
+    color: #89b4fa;
+    background-image: image(url("/home/kovac/.config/wlogout/icons/lock-hover.svg"));
+}
+
+#logout {
+    background-image: image(url("/home/kovac/.config/wlogout/icons/logout.svg"));
+}
+#logout:hover,
+#logout:focus {
+    background-color: rgba(36, 26, 52, 0.94);
+    border-color: #cba6f7;
+    color: #cba6f7;
+    background-image: image(url("/home/kovac/.config/wlogout/icons/logout-hover.svg"));
+}
+
+#suspend {
+    background-image: image(url("/home/kovac/.config/wlogout/icons/suspend.svg"));
+}
+#suspend:hover,
+#suspend:focus {
+    background-color: rgba(20, 38, 48, 0.94);
+    border-color: #74c7ec;
+    color: #74c7ec;
+    background-image: image(url("/home/kovac/.config/wlogout/icons/suspend-hover.svg"));
+}
+
+#reboot {
+    background-image: image(url("/home/kovac/.config/wlogout/icons/reboot.svg"));
+}
+#reboot:hover,
+#reboot:focus {
+    background-color: rgba(44, 36, 22, 0.94);
+    border-color: #e5c07b;
+    color: #e5c07b;
+    background-image: image(url("/home/kovac/.config/wlogout/icons/reboot-hover.svg"));
+}
+
+#shutdown {
+    background-image: image(url("/home/kovac/.config/wlogout/icons/shutdown.svg"));
+}
+#shutdown:hover,
+#shutdown:focus {
+    background-color: rgba(48, 22, 30, 0.94);
+    border-color: #f38ba8;
+    color: #f38ba8;
+    background-image: image(url("/home/kovac/.config/wlogout/icons/shutdown-hover.svg"));
+}
