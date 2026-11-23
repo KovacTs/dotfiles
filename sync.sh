@@ -45,7 +45,7 @@ for unit in battery-notify.service battery-notify.timer control-center-restore.s
     copy_file "$HOME/.config/systemd/user/$unit" "$DOTFILES_DIR/config/systemd/user/$unit"
 done
 
-for script in battery-notify.sh control-center-restore.py; do
+for script in battery-notify.sh battery-popup.py control-center-restore.py; do
     copy_file "$HOME/.local/bin/$script" "$DOTFILES_DIR/local/bin/$script"
 done
 

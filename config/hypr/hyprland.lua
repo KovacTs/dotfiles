@@ -417,6 +417,14 @@ hl.layer_rule({
     ignore_alpha = 0.5,
 })
 
+hl.layer_rule({
+    name      = "battery-popup-blur",
+    match     = { namespace = "^battery-popup$" },
+    blur      = true,
+    ignore_alpha = 0.5,
+    animation = "slide top",
+})
+
 -- Hyprland-run windowrule
 hl.window_rule({
     name  = "move-hyprland-run",
