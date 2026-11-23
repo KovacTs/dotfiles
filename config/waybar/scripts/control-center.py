@@ -560,6 +560,194 @@ button.notif-dismiss-btn:hover {
     font-size: 9.8px;
     font-weight: 500;
 }
+
+/* Bluetooth Side Panel */
+.bt-card {
+    background-color: rgba(13, 17, 23, 0.96);
+    background-image: none;
+    border: 1px solid rgba(137, 180, 250, 0.28);
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: none;
+    color: #cdd6f4;
+    font-family: "JetBrainsMono Nerd Font Propo", "Adwaita Sans", sans-serif;
+    font-size: 11px;
+}
+
+.bt-header-badge {
+    background-color: rgba(137, 180, 250, 0.16);
+    color: #89b4fa;
+    border-radius: 999px;
+    min-width: 26px;
+    min-height: 26px;
+    font-size: 13px;
+}
+
+.bt-header-badge.off {
+    background-color: rgba(108, 112, 134, 0.18);
+    color: #6c7086;
+}
+
+.bt-subtitle {
+    color: #7f849c;
+    font-size: 9.2px;
+    font-weight: 500;
+}
+
+button.bt-scan-btn,
+button.bt-scan-btn:focus,
+button.bt-scan-btn:active {
+    background-color: rgba(22, 27, 36, 0.92);
+    background-image: none;
+    border: 1px solid rgba(137, 180, 250, 0.24);
+    border-radius: 8px;
+    padding: 3px 8px;
+    min-height: 0;
+    color: #89b4fa;
+    font-size: 9.3px;
+    font-weight: 600;
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+    transition: background-color 140ms ease, border-color 140ms ease;
+}
+
+button.bt-scan-btn:hover {
+    background-color: rgba(137, 180, 250, 0.16);
+    border-color: rgba(137, 180, 250, 0.44);
+}
+
+button.bt-scan-btn:disabled {
+    opacity: 0.45;
+}
+
+.bt-section-label {
+    color: #7f849c;
+    font-size: 8.8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+scrolledwindow.bt-scroll,
+scrolledwindow.bt-scroll viewport {
+    background: transparent;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+}
+
+scrolledwindow.bt-scroll scrollbar slider {
+    background-color: rgba(137, 180, 250, 0.22);
+    border-radius: 999px;
+    min-width: 3px;
+    min-height: 20px;
+}
+
+.bt-dev {
+    background-color: rgba(22, 27, 36, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 7px 9px;
+    transition: background-color 140ms ease, border-color 140ms ease;
+}
+
+.bt-dev.connected {
+    background-color: rgba(137, 180, 250, 0.11);
+    border-color: rgba(137, 180, 250, 0.34);
+}
+
+.bt-dev-icon {
+    color: #8b949e;
+    font-size: 13px;
+    min-width: 18px;
+}
+
+.bt-dev.connected .bt-dev-icon {
+    color: #89b4fa;
+}
+
+.bt-dev-name {
+    color: #e6edf3;
+    font-size: 10.2px;
+    font-weight: 600;
+}
+
+.bt-dev-mac {
+    color: #6c7086;
+    font-size: 8.5px;
+    font-weight: 500;
+}
+
+.bt-bat-pill {
+    background-color: rgba(166, 227, 161, 0.14);
+    border: 1px solid rgba(166, 227, 161, 0.30);
+    border-radius: 999px;
+    padding: 0px 6px;
+    color: #a6e3a1;
+    font-size: 8.5px;
+    font-weight: 700;
+}
+
+button.bt-action-btn,
+button.bt-action-btn:focus,
+button.bt-action-btn:active {
+    background-color: rgba(49, 50, 68, 0.60);
+    background-image: none;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 7px;
+    padding: 3px 8px;
+    min-height: 0;
+    color: #cdd6f4;
+    font-size: 9.2px;
+    font-weight: 600;
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+    transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease;
+}
+
+button.bt-action-btn:hover {
+    background-color: rgba(69, 71, 90, 0.85);
+    color: #e6edf3;
+}
+
+button.bt-action-btn:disabled {
+    opacity: 0.45;
+}
+
+button.bt-action-btn.primary {
+    background-color: rgba(137, 180, 250, 0.16);
+    border-color: rgba(137, 180, 250, 0.34);
+    color: #89b4fa;
+}
+
+button.bt-action-btn.primary:hover {
+    background-color: rgba(137, 180, 250, 0.26);
+    border-color: rgba(137, 180, 250, 0.50);
+}
+
+button.bt-action-btn.danger:hover {
+    background-color: rgba(243, 139, 168, 0.18);
+    border-color: rgba(243, 139, 168, 0.38);
+    color: #f38ba8;
+}
+
+.bt-status-bar {
+    background-color: rgba(137, 180, 250, 0.12);
+    border: 1px solid rgba(137, 180, 250, 0.28);
+    border-radius: 8px;
+    padding: 5px 8px;
+    color: #89b4fa;
+    font-size: 9.4px;
+}
+
+.bt-status-bar.error {
+    background-color: rgba(243, 139, 168, 0.14);
+    border-color: rgba(243, 139, 168, 0.30);
+    color: #f38ba8;
+}
 """
 
 
@@ -611,6 +799,34 @@ def _app_icon(appname: str) -> str:
         if any(k in low for k in keys):
             return icon
     return "󰂚"
+
+
+@dataclass
+class BluetoothDevice:
+    mac: str
+    name: str
+    icon: str
+    paired: bool = False
+    connected: bool = False
+    trusted: bool = False
+    battery: int | None = None
+
+
+def _bt_device_icon(icon_hint: str, name: str) -> str:
+    hay = f"{icon_hint} {name}".lower()
+    if any(k in hay for k in ("headset", "headphone", "earbud", "airpod", "buds", "audio")):
+        return "󰋋"
+    if "mouse" in hay:
+        return "󰍽"
+    if "keyboard" in hay:
+        return "󰌌"
+    if "phone" in hay:
+        return "󰏲"
+    if any(k in hay for k in ("gaming", "joystick", "controller", "gamepad", "xbox", "dualsense")):
+        return "󰊴"
+    if "computer" in hay or "laptop" in hay:
+        return "󰌢"
+    return "󰂯"
 
 
 @dataclass
@@ -722,6 +938,92 @@ class SystemBackend:
             self._save_persist({"bt": False})
             return True, ""
         return False, err2.strip() or err.strip()
+
+    def list_bt_devices(self) -> list[BluetoothDevice]:
+        if not shutil.which("bluetoothctl"):
+            return []
+        rc, out, _ = self._run(["bluetoothctl", "devices"], timeout=4)
+        if rc != 0 or not out.strip():
+            return []
+
+        devices: list[BluetoothDevice] = []
+        for line in out.splitlines():
+            m = re.match(r"^\s*Device\s+([0-9A-Fa-f:]{17})\s+(.*)$", line)
+            if not m:
+                continue
+            mac = m.group(1).upper()
+            raw_name = m.group(2).strip() or mac
+
+            paired = False
+            connected = False
+            trusted = False
+            icon_hint = ""
+            alias = raw_name
+            battery: int | None = None
+
+            rc_i, info_out, _ = self._run(["bluetoothctl", "info", mac], timeout=3)
+            if rc_i == 0 and info_out:
+                for iline in info_out.splitlines():
+                    s = iline.strip()
+                    if s.startswith("Alias:"):
+                        val = s.split(":", 1)[1].strip()
+                        if val:
+                            alias = val
+                    elif s.startswith("Icon:"):
+                        icon_hint = s.split(":", 1)[1].strip()
+                    elif s.startswith("Paired:"):
+                        paired = "yes" in s.lower()
+                    elif s.startswith("Connected:"):
+                        connected = "yes" in s.lower()
+                    elif s.startswith("Trusted:"):
+                        trusted = "yes" in s.lower()
+                    elif s.startswith("Battery Percentage:"):
+                        bm = re.search(r"\((\d+)\)", s)
+                        if bm:
+                            battery = int(bm.group(1))
+
+            devices.append(
+                BluetoothDevice(
+                    mac=mac,
+                    name=alias,
+                    icon=_bt_device_icon(icon_hint, alias),
+                    paired=paired,
+                    connected=connected,
+                    trusted=trusted,
+                    battery=battery,
+                )
+            )
+
+        devices.sort(key=lambda d: (not d.connected, not d.paired, d.name.lower()))
+        return devices
+
+    def bt_action(self, action: str, mac: str) -> tuple[bool, str]:
+        if not shutil.which("bluetoothctl"):
+            return False, "bluetoothctl no está disponible"
+        if action == "connect":
+            rc, out, err = self._run(["bluetoothctl", "connect", mac], timeout=14)
+            ok = rc == 0 and "connection successful" in (out + err).lower()
+            return ok, "" if ok else (err.strip() or out.strip() or "No se pudo conectar")
+        if action == "disconnect":
+            rc, out, err = self._run(["bluetoothctl", "disconnect", mac], timeout=10)
+            ok = rc == 0 and "successful" in (out + err).lower()
+            return ok, "" if ok else (err.strip() or out.strip() or "No se pudo desconectar")
+        if action == "pair":
+            rc, out, err = self._run(["bluetoothctl", "pair", mac], timeout=18)
+            low = (out + err).lower()
+            if rc != 0 and "already exists" not in low:
+                return False, err.strip() or out.strip() or "No se pudo vincular"
+            self._run(["bluetoothctl", "trust", mac], timeout=5)
+            rc_c, out_c, err_c = self._run(["bluetoothctl", "connect", mac], timeout=12)
+            if rc_c != 0:
+                return True, "Vinculado (no se pudo conectar automáticamente)"
+            return True, ""
+        if action == "remove":
+            self._run(["bluetoothctl", "disconnect", mac], timeout=5)
+            rc, out, err = self._run(["bluetoothctl", "remove", mac], timeout=8)
+            ok = rc == 0
+            return ok, "" if ok else (err.strip() or out.strip() or "No se pudo olvidar")
+        return False, f"Acción desconocida: {action}"
 
     # --- Audio ---
     def get_audio(self) -> tuple[bool, int]:
@@ -1306,6 +1608,14 @@ class ControlCenterApp(Gtk.Application):
         self._bri_debounce: int | None = None
         self._notif_poll_timer: int | None = None
         self._last_notif_sig: tuple | None = None
+        self.bt_panel_open = False
+        self.bt_scanning = False
+        self.bt_busy_macs: set[str] = set()
+        self._bt_scan_proc: subprocess.Popen | None = None
+        self._bt_poll_timer: int | None = None
+        self._bt_status_timer: int | None = None
+        self.bt_revealer: Gtk.Revealer | None = None
+        self.bt_card: Gtk.Box | None = None
 
     def do_activate(self) -> None:
         self._load_css()
@@ -1315,6 +1625,7 @@ class ControlCenterApp(Gtk.Application):
         self._notif_poll_timer = GLib.timeout_add_seconds(3, self._poll_notifications)
 
     def do_shutdown(self) -> None:
+        self._stop_bt_scan()
         if self._notif_poll_timer is not None:
             GLib.source_remove(self._notif_poll_timer)
             self._notif_poll_timer = None
@@ -1370,14 +1681,22 @@ class ControlCenterApp(Gtk.Application):
         click_ctrl.connect("pressed", self._on_backdrop_click)
         root.add_controller(click_ctrl)
 
+        # Horizontal centered stage: invisible left mirror + centered card + right Bluetooth drawer
+        stage = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
+        stage.set_halign(Gtk.Align.CENTER)
+        stage.set_valign(Gtk.Align.START)
+        stage.set_margin_top(4)
+
+        left_mirror = Gtk.Box()
+        left_mirror.set_size_request(312, 1)
+        left_mirror.set_can_target(False)
+        stage.append(left_mirror)
+
         # Floating card centered right underneath the center of Waybar
         card = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=9)
         card.add_css_class("cc-card")
         card.set_size_request(356, -1)
-        card.set_hexpand(True)
-        card.set_halign(Gtk.Align.CENTER)
         card.set_valign(Gtk.Align.START)
-        card.set_margin_top(4)
         self.card = card
 
         # --- Header ---
@@ -1432,6 +1751,13 @@ class ControlCenterApp(Gtk.Application):
             tile = self.tiles[key]
             tile.connect("clicked", self._on_tile_clicked, key)
             grid.attach(tile, col, row, 1, 1)
+
+        bt_tile = self.tiles["bt"]
+        bt_tile.set_tooltip_text("Click izq: Activar/desactivar · Click der: Dispositivos")
+        bt_rclick = Gtk.GestureClick()
+        bt_rclick.set_button(3)
+        bt_rclick.connect("pressed", self._on_bt_right_click)
+        bt_tile.add_controller(bt_rclick)
 
         card.append(grid)
 
@@ -1546,8 +1872,88 @@ class ControlCenterApp(Gtk.Application):
         self.toast_rev.set_child(toast_box)
         card.append(self.toast_rev)
 
-        root.append(card)
+        stage.append(card)
+
+        # Right slot holding the slide-out Bluetooth side panel (keeps main card strictly centered)
+        right_slot = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
+        right_slot.set_size_request(312, -1)
+        right_slot.set_valign(Gtk.Align.START)
+
+        bt_rev = Gtk.Revealer()
+        bt_rev.set_transition_type(Gtk.RevealerTransitionType.SLIDE_RIGHT)
+        bt_rev.set_transition_duration(160)
+        bt_rev.set_reveal_child(False)
+        self.bt_revealer = bt_rev
+
+        self.bt_card = self._build_bt_panel()
+        bt_rev.set_child(self.bt_card)
+        right_slot.append(bt_rev)
+        stage.append(right_slot)
+
+        root.append(stage)
         win.set_child(root)
+
+    def _build_bt_panel(self) -> Gtk.Box:
+        bt_card = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=8)
+        bt_card.add_css_class("bt-card")
+        bt_card.set_size_request(312, -1)
+        bt_card.set_valign(Gtk.Align.START)
+
+        header = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
+        header.set_valign(Gtk.Align.CENTER)
+
+        self.bt_badge = Gtk.Label(label="󰂯")
+        self.bt_badge.add_css_class("bt-header-badge")
+        self.bt_badge.set_halign(Gtk.Align.CENTER)
+        self.bt_badge.set_valign(Gtk.Align.CENTER)
+        header.append(self.bt_badge)
+
+        title_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
+        title_box.set_hexpand(True)
+        title = Gtk.Label(label="Bluetooth", xalign=0)
+        title.add_css_class("cc-title")
+        title_box.append(title)
+
+        self.bt_subtitle_lbl = Gtk.Label(label="Dispositivos", xalign=0)
+        self.bt_subtitle_lbl.add_css_class("bt-subtitle")
+        title_box.append(self.bt_subtitle_lbl)
+        header.append(title_box)
+
+        self.bt_scan_btn = Gtk.Button(label="󰑐 Buscar")
+        self.bt_scan_btn.add_css_class("bt-scan-btn")
+        self.bt_scan_btn.set_tooltip_text("Buscar dispositivos cercanos")
+        self.bt_scan_btn.connect("clicked", lambda _b: self._start_bt_scan())
+        header.append(self.bt_scan_btn)
+
+        bt_card.append(header)
+
+        div = Gtk.Box()
+        div.add_css_class("divider")
+        bt_card.append(div)
+
+        self.bt_status_rev = Gtk.Revealer()
+        self.bt_status_rev.set_transition_type(Gtk.RevealerTransitionType.SLIDE_DOWN)
+        self.bt_status_rev.set_transition_duration(140)
+        self.bt_status_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
+        self.bt_status_box.add_css_class("bt-status-bar")
+        self.bt_status_lbl = Gtk.Label(label="", xalign=0)
+        self.bt_status_lbl.set_wrap(True)
+        self.bt_status_lbl.set_hexpand(True)
+        self.bt_status_box.append(self.bt_status_lbl)
+        self.bt_status_rev.set_child(self.bt_status_box)
+        bt_card.append(self.bt_status_rev)
+
+        scroll = Gtk.ScrolledWindow()
+        scroll.add_css_class("bt-scroll")
+        scroll.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
+        scroll.set_propagate_natural_height(True)
+        scroll.set_max_content_height(460)
+
+        self.bt_list_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        scroll.set_child(self.bt_list_box)
+        bt_card.append(scroll)
+
+        return bt_card
 
     def _on_key_pressed(self, _ctrl, keyval: int, _keycode: int, _state) -> bool:
         if keyval == Gdk.KEY_Escape:
@@ -1558,13 +1964,318 @@ class ControlCenterApp(Gtk.Application):
     def _on_backdrop_click(self, _gesture, _n_press: int, x: float, y: float) -> None:
         if not self.card or not self.root:
             return
-        ok, rect = self.card.compute_bounds(self.root)
-        if not ok:
-            return
         pt = Graphene.Point()
         pt.init(float(x), float(y))
-        if not rect.contains_point(pt):
-            self.quit()
+
+        ok_main, rect_main = self.card.compute_bounds(self.root)
+        if ok_main and rect_main.contains_point(pt):
+            return
+
+        if self.bt_panel_open and self.bt_card:
+            ok_bt, rect_bt = self.bt_card.compute_bounds(self.root)
+            if ok_bt and rect_bt.contains_point(pt):
+                return
+
+        self.quit()
+
+    def _on_bt_right_click(self, _gesture, _n_press: int, _x: float, _y: float) -> None:
+        if self.bt_panel_open:
+            self._close_bt_panel()
+        else:
+            self._open_bt_panel()
+
+    def _open_bt_panel(self) -> None:
+        self.bt_panel_open = True
+        if self.bt_revealer:
+            self.bt_revealer.set_reveal_child(True)
+        self._refresh_bt_devices()
+        if self.state.bt_on:
+            self._start_bt_scan()
+
+    def _close_bt_panel(self) -> None:
+        self.bt_panel_open = False
+        self._stop_bt_scan()
+        if self.bt_revealer:
+            self.bt_revealer.set_reveal_child(False)
+
+    def _show_bt_status(self, msg: str, error: bool = False) -> None:
+        if self._bt_status_timer is not None:
+            GLib.source_remove(self._bt_status_timer)
+        self.bt_status_lbl.set_label(msg)
+        if error:
+            self.bt_status_box.add_css_class("error")
+        else:
+            self.bt_status_box.remove_css_class("error")
+        self.bt_status_rev.set_reveal_child(True)
+        self._bt_status_timer = GLib.timeout_add(3500, self._hide_bt_status)
+
+    def _hide_bt_status(self) -> bool:
+        self._bt_status_timer = None
+        self.bt_status_rev.set_reveal_child(False)
+        return False
+
+    def _start_bt_scan(self) -> None:
+        if not self.state.bt_on or self.bt_scanning or not shutil.which("bluetoothctl"):
+            return
+        self.bt_scanning = True
+        self.bt_scan_btn.set_sensitive(False)
+        self.bt_scan_btn.set_label("󰑐 Buscando...")
+        self.bt_subtitle_lbl.set_label("Buscando dispositivos...")
+
+        try:
+            self._bt_scan_proc = subprocess.Popen(
+                ["bluetoothctl", "--timeout", "10", "scan", "on"],
+                stdin=subprocess.DEVNULL,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                start_new_session=True,
+            )
+        except OSError:
+            self.bt_scanning = False
+            self.bt_scan_btn.set_sensitive(True)
+            self.bt_scan_btn.set_label("󰑐 Buscar")
+            return
+
+        if self._bt_poll_timer is None:
+            self._bt_poll_timer = GLib.timeout_add_seconds(2, self._poll_bt_scan)
+
+    def _poll_bt_scan(self) -> bool:
+        if not self.bt_panel_open:
+            self._stop_bt_scan()
+            return False
+        self._refresh_bt_devices()
+        if self._bt_scan_proc is not None and self._bt_scan_proc.poll() is not None:
+            self._bt_scan_proc = None
+            self.bt_scanning = False
+            self.bt_scan_btn.set_sensitive(self.state.bt_on)
+            self.bt_scan_btn.set_label("󰑐 Buscar")
+            self._bt_poll_timer = None
+            return False
+        return True
+
+    def _stop_bt_scan(self) -> None:
+        if self._bt_poll_timer is not None:
+            GLib.source_remove(self._bt_poll_timer)
+            self._bt_poll_timer = None
+        if self._bt_scan_proc is not None:
+            try:
+                os.killpg(os.getpgid(self._bt_scan_proc.pid), signal.SIGTERM)
+            except OSError:
+                try:
+                    self._bt_scan_proc.terminate()
+                except OSError:
+                    pass
+            self._bt_scan_proc = None
+        self.bt_scanning = False
+        if hasattr(self, "bt_scan_btn"):
+            self.bt_scan_btn.set_sensitive(self.state.bt_on)
+            self.bt_scan_btn.set_label("󰑐 Buscar")
+
+    def _refresh_bt_devices(self) -> None:
+        if not self.bt_panel_open:
+            return
+
+        def worker() -> None:
+            bt_on = self.backend.get_bt()
+            devs = self.backend.list_bt_devices() if bt_on else []
+            GLib.idle_add(self._render_bt_devices, bt_on, devs)
+
+        threading.Thread(target=worker, daemon=True).start()
+
+    def _render_bt_devices(self, bt_on: bool, devs: list[BluetoothDevice]) -> bool:
+        if not self.bt_panel_open:
+            return False
+
+        if bt_on:
+            self.bt_badge.remove_css_class("off")
+        else:
+            self.bt_badge.add_css_class("off")
+        self.bt_scan_btn.set_sensitive(bt_on and not self.bt_scanning)
+
+        child = self.bt_list_box.get_first_child()
+        while child is not None:
+            nxt = child.get_next_sibling()
+            self.bt_list_box.remove(child)
+            child = nxt
+
+        if not bt_on:
+            self.bt_subtitle_lbl.set_label("Desactivado")
+            empty = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=4)
+            empty.add_css_class("notif-empty-box")
+            icon = Gtk.Label(label="󰂲")
+            icon.add_css_class("notif-empty-icon")
+            empty.append(icon)
+            lbl = Gtk.Label(label="Bluetooth desactivado\nActívalo desde el panel central")
+            lbl.set_justify(Gtk.Justification.CENTER)
+            lbl.add_css_class("notif-empty-text")
+            empty.append(lbl)
+            self.bt_list_box.append(empty)
+            return False
+
+        connected = [d for d in devs if d.connected]
+        paired = [d for d in devs if d.paired and not d.connected]
+        available = [d for d in devs if not d.paired and not d.connected]
+
+        if self.bt_scanning:
+            self.bt_subtitle_lbl.set_label("Buscando dispositivos...")
+        else:
+            self.bt_subtitle_lbl.set_label(
+                f"{len(connected)} conectado(s) · {len(paired)} vinculado(s)"
+            )
+
+        if not devs:
+            empty = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=4)
+            empty.add_css_class("notif-empty-box")
+            icon = Gtk.Label(label="󰂯")
+            icon.add_css_class("notif-empty-icon")
+            empty.append(icon)
+            lbl = Gtk.Label(
+                label="Buscando dispositivos..." if self.bt_scanning else "No se encontraron dispositivos"
+            )
+            lbl.add_css_class("notif-empty-text")
+            empty.append(lbl)
+            self.bt_list_box.append(empty)
+            return False
+
+        sections = [
+            ("CONECTADOS", connected),
+            ("VINCULADOS", paired),
+            ("DISPONIBLES", available),
+        ]
+        for title, group in sections:
+            if not group:
+                continue
+            hdr = Gtk.Label(label=title, xalign=0)
+            hdr.add_css_class("bt-section-label")
+            self.bt_list_box.append(hdr)
+            for dev in group:
+                self.bt_list_box.append(self._build_bt_device_card(dev))
+        return False
+
+    def _build_bt_device_card(self, dev: BluetoothDevice) -> Gtk.Box:
+        card = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        card.add_css_class("bt-dev")
+        if dev.connected:
+            card.add_css_class("connected")
+
+        top = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=7)
+        top.set_valign(Gtk.Align.CENTER)
+
+        icon_lbl = Gtk.Label(label=dev.icon)
+        icon_lbl.add_css_class("bt-dev-icon")
+        top.append(icon_lbl)
+
+        info_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
+        info_box.set_hexpand(True)
+        name_lbl = Gtk.Label(label=dev.name, xalign=0)
+        name_lbl.add_css_class("bt-dev-name")
+        name_lbl.set_ellipsize(Pango.EllipsizeMode.END)
+        name_lbl.set_max_width_chars(24)
+        info_box.append(name_lbl)
+
+        mac_lbl = Gtk.Label(label=dev.mac, xalign=0)
+        mac_lbl.add_css_class("bt-dev-mac")
+        info_box.append(mac_lbl)
+        top.append(info_box)
+
+        if dev.connected and dev.battery is not None:
+            bat = Gtk.Label(label=f"󰁹 {dev.battery}%")
+            bat.add_css_class("bt-bat-pill")
+            top.append(bat)
+
+        card.append(top)
+
+        actions = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=6)
+        busy = dev.mac in self.bt_busy_macs
+
+        if dev.connected:
+            btn_disc = Gtk.Button(label="Desconectar")
+            btn_disc.add_css_class("bt-action-btn")
+            btn_disc.set_hexpand(True)
+            btn_disc.set_sensitive(not busy)
+            btn_disc.connect("clicked", self._on_bt_device_action, "disconnect", dev)
+            actions.append(btn_disc)
+
+            btn_rm = Gtk.Button(label="Olvidar")
+            btn_rm.add_css_class("bt-action-btn")
+            btn_rm.add_css_class("danger")
+            btn_rm.set_sensitive(not busy)
+            btn_rm.connect("clicked", self._on_bt_device_action, "remove", dev)
+            actions.append(btn_rm)
+        elif dev.paired:
+            btn_conn = Gtk.Button(label="Conectar")
+            btn_conn.add_css_class("bt-action-btn")
+            btn_conn.add_css_class("primary")
+            btn_conn.set_hexpand(True)
+            btn_conn.set_sensitive(not busy)
+            btn_conn.connect("clicked", self._on_bt_device_action, "connect", dev)
+            actions.append(btn_conn)
+
+            btn_rm = Gtk.Button(label="Olvidar")
+            btn_rm.add_css_class("bt-action-btn")
+            btn_rm.add_css_class("danger")
+            btn_rm.set_sensitive(not busy)
+            btn_rm.connect("clicked", self._on_bt_device_action, "remove", dev)
+            actions.append(btn_rm)
+        else:
+            btn_pair = Gtk.Button(label="Vincular")
+            btn_pair.add_css_class("bt-action-btn")
+            btn_pair.add_css_class("primary")
+            btn_pair.set_hexpand(True)
+            btn_pair.set_sensitive(not busy)
+            btn_pair.connect("clicked", self._on_bt_device_action, "pair", dev)
+            actions.append(btn_pair)
+
+        card.append(actions)
+        return card
+
+    def _on_bt_device_action(
+        self, _btn: Gtk.Button, action: str, dev: BluetoothDevice
+    ) -> None:
+        if dev.mac in self.bt_busy_macs:
+            return
+        self.bt_busy_macs.add(dev.mac)
+        verbs = {
+            "connect": f"Conectando a {dev.name}...",
+            "disconnect": f"Desconectando {dev.name}...",
+            "pair": f"Vinculando {dev.name}...",
+            "remove": f"Olvidando {dev.name}...",
+        }
+        self._show_bt_status(verbs.get(action, "Procesando..."))
+        self._refresh_bt_devices()
+
+        def worker() -> None:
+            ok, msg = self.backend.bt_action(action, dev.mac)
+            bt_on = self.backend.get_bt()
+            devs = self.backend.list_bt_devices() if bt_on else []
+            GLib.idle_add(self._on_bt_action_done, dev.mac, action, ok, msg, bt_on, devs)
+
+        threading.Thread(target=worker, daemon=True).start()
+
+    def _on_bt_action_done(
+        self,
+        mac: str,
+        action: str,
+        ok: bool,
+        msg: str,
+        bt_on: bool,
+        devs: list[BluetoothDevice],
+    ) -> bool:
+        self.bt_busy_macs.discard(mac)
+        self._render_bt_devices(bt_on, devs)
+        if not ok:
+            self._show_bt_status(msg or "Error al ejecutar la acción", error=True)
+        elif msg:
+            self._show_bt_status(msg)
+        else:
+            done_msgs = {
+                "connect": "Dispositivo conectado",
+                "disconnect": "Dispositivo desconectado",
+                "pair": "Dispositivo vinculado y conectado",
+                "remove": "Dispositivo olvidado",
+            }
+            self._show_bt_status(done_msgs.get(action, "Listo"))
+        return False
 
     def _show_toast(self, msg: str) -> None:
         if self._toast_timer is not None:
@@ -1816,6 +2527,13 @@ class ControlCenterApp(Gtk.Application):
         self._apply_state(st)
         if not ok and err:
             self._show_toast(err)
+        if self.bt_panel_open and key in ("bt", "airplane"):
+            if st.bt_on:
+                self._refresh_bt_devices()
+                self._start_bt_scan()
+            else:
+                self._stop_bt_scan()
+                self._refresh_bt_devices()
         return False
 
     def _on_vol_changed(self, scale: Gtk.Scale) -> None:
